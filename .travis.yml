@@ -21,12 +21,12 @@ script:
   # - docker build -t udagram-reverseproxy ./udagram-reverseproxy
   # - docker tag udagram-api-feed moshud/udagram-api-feed:v1
   # - docker tag udagram-api-user moshud/udagram-api-user:v1
-  # - docker tag udagram-frontend moshud/udagram-frontend:v6
+  - docker tag udagram-frontend moshud/udagram-frontend:v7
   # - docker tag udagram-reverseproxy moshud/reverseproxy:v4
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   # - docker push moshud/udagram-api-feed:v1
   # - docker push moshud/udagram-api-user:v1
-  # - docker push moshud/udagram-frontend:v6
+  - docker push moshud/udagram-frontend:v7
   # - docker push moshud/reverseproxy:v4

@@ -8,14 +8,14 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      service: reverseproxy
+      app: reverseproxy
   template:
     metadata:
       labels:
-        service: reverseproxy
+        app: reverseproxy
     spec:
       containers:
-      - image: moshud/reverseproxy
+      - image: moshud/reverseproxy:v2
         name: reverseproxy
         imagePullPolicy: Always          
         resources:

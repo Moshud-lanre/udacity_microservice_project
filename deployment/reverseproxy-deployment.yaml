@@ -15,12 +15,12 @@ spec:
         app: reverseproxy
     spec:
       containers:
-      - image: moshud/reverseproxy:v3
+      - image: moshud/reverseproxy:v1
         name: reverseproxy
         imagePullPolicy: Always          
         resources:
           requests:
-            memory: "100Mi"
+            memory: "512Mi"
             cpu: "250m"
           limits:
             memory: "1024Mi"

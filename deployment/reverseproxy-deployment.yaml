@@ -5,7 +5,7 @@ metadata:
     service: reverseproxy
   name: reverseproxy
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: reverseproxy
@@ -15,7 +15,7 @@ spec:
         app: reverseproxy
     spec:
       containers:
-      - image: moshud/reverseproxy:v2
+      - image: moshud/reverseproxy:v3
         name: reverseproxy
         imagePullPolicy: Always          
         resources:

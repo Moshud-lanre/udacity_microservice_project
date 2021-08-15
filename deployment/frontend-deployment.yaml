@@ -16,14 +16,14 @@ spec:
         api: external        
     spec:
       containers:
-      - image: moshud/udagram-frontend:v8
+      - image: moshud/udagram-frontend:v9
         name: frontend
         imagePullPolicy: Always          
         ports:
         - containerPort: 80
         resources:
           requests:
-            memory: "64Mi"
+            memory: "300Mi"
             cpu: "250m"
           limits:
             memory: "1024Mi"

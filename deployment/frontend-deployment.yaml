@@ -16,7 +16,7 @@ spec:
         api: external        
     spec:
       containers:
-      - image: moshud/udagram-frontend:v11
+      - image: moshud/udagram-frontend:v12
         name: frontend
         imagePullPolicy: Always          
         ports:

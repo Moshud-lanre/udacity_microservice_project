@@ -15,7 +15,7 @@ spec:
         app: reverseproxy
     spec:
       containers:
-      - image: moshud/reverseproxy:v4
+      - image: moshud/reverseproxy:v7
         name: reverseproxy
         imagePullPolicy: Always          
         resources:

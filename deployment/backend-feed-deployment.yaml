@@ -15,12 +15,12 @@ spec:
         app: backend-feed
     spec:
       containers:
-      - image: moshud/udagram-api-feed:v1
+      - image: moshud/udagram-api-feed:v3
         name: backend-feed
         imagePullPolicy: Always  
         resources:
           requests:
-            memory: "1000Mi"
+            memory: "70Mi"
             cpu: "250m"
           limits:
             memory: "1024Mi"

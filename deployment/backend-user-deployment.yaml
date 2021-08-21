@@ -15,16 +15,16 @@ spec:
         app: backend-user
     spec:
       containers:
-      - image: moshud/udagram-api-user:v7
+      - image: moshud/udagram-api-user:v8
         name: backend-user 
         imagePullPolicy: Always  
         resources:
           requests:
-            memory: "700Mi"
-            cpu: "250m"
+            memory: "900Mi"
+            cpu: "350m"
           limits:
-            memory: "1024Mi"
-            cpu: "500m"      
+            memory: "2024Mi"
+            cpu: "600m"      
         env:
         - name: URL
           valueFrom:

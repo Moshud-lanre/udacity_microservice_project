@@ -15,7 +15,7 @@ spec:
         app: backend-feed
     spec:
       containers:
-      - image: moshud/udagram-api-feed:v6
+      - image: moshud/udagram-api-feed:v7
         name: backend-feed
         imagePullPolicy: Always  
         resources:

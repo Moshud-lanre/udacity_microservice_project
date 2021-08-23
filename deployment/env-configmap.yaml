@@ -7,6 +7,6 @@ data:
   JWT_SECRET: testing
   POSTGRES_DB: udagrammoshdev
   POSTGRES_HOST: udagrammoshdev.ceiceqlfkzry.us-east-1.rds.amazonaws.com
-  URL: 'http://localhost:8100'
+  URL: 'http://afa16c0da507040bc9b5c7d970da7e94-1247867638.us-east-1.elb.amazonaws.com:8100'
 metadata:
   name: env-config
